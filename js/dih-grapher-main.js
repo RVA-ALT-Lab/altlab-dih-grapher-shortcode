@@ -25,6 +25,14 @@ function sliderAmount(slider){
 	return sliderValue;
 }
 
-if(document.getElementById("thanks")){
-  document.getElementById("thanks").scrollIntoView();
+document.onload = function (){
+	if(document.getElementById("thanks")){
+	  let thanks = document.getElementById("thanks");
+	  let topThanks = thanks.offsetTop;
+	  window.scrollTo({
+		  top: topThanks,
+		  left: 0,
+		  behavior: 'smooth'
+		});
+	}
 }
