@@ -57,3 +57,9 @@
     height: 0;
     overflow: hidden;
   }
+
+  #gform_submit_button_6 {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
