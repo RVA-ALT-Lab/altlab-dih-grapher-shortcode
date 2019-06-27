@@ -1,8 +1,8 @@
-if (document.getElementById('gform_wrapper_2'))//change for prod
+if (document.getElementById('gform_wrapper_6'))//change for prod
 {
 	let values = [50,50,50,50,50];
 	let sliders = Array.from(document.getElementsByClassName('slider'));
-	let field = document.getElementById('input_2_4');
+	let field = document.getElementById('input_6_4');
 	sliders.forEach(function(slider, index) {
 		slider.oninput = function (){				
 				console.log(index)
