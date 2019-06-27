@@ -50,3 +50,10 @@
   background: #BE3F21;
   cursor: pointer;
 }
+
+
+#input_6_1, #input_6_4{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
