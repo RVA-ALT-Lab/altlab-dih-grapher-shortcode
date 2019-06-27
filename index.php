@@ -50,3 +50,16 @@ function graph_builder($score, $left, $right){
 </p></div>';
 
 }
+
+function filterPostForTBL($content){
+    global $post;	
+	if (get_post_meta( $post->ID, 'tbl_score', true )){
+	  return $content . get_post_meta( $post->ID, 'tbl_score', true );
+	} else {
+		return $content;
+	}
+}
+
+add_filter( 'the_content', 'filterPostForTBL');
+
+

@@ -1,13 +1,13 @@
 if (document.getElementById('gform_wrapper_2'))//change for prod
 {
-	let values = [0,0,0,0,0];
+	let values = [50,50,50,50,50];
 	let sliders = Array.from(document.getElementsByClassName('slider'));
-	let field = document.getElementById('input_2_2');
+	let field = document.getElementById('input_2_4');
 	sliders.forEach(function(slider, index) {
 		slider.oninput = function (){				
 				console.log(index)
 				values[index] = sliderAmount(slider);
-				field.value = values.join(',');
+				field.value = '[dih-graph scores="'+values.join(',')+'"]';
 		}
 
 	})
