@@ -24,3 +24,7 @@ function sliderAmount(slider){
 	 sliderValue = slider.value;
 	return sliderValue;
 }
+
+if(document.getElementById("thanks")){
+  document.getElementById("thanks").scrollIntoView();
+}
