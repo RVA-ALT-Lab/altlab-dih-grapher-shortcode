@@ -25,7 +25,7 @@ function sliderAmount(slider){
 	return sliderValue;
 }
 
-document.onload = function (){
+function scrollToThanks(){
 	console.log('scroll ran')
 	if(document.getElementById("thanks")){
 		console.log('scroll found thanks')
@@ -37,4 +37,18 @@ document.onload = function (){
 		  behavior: 'smooth'
 		});
 	}
+}
+
+var callback = function(){
+  // Handler when the DOM is fully loaded
+  scrollToThanks();
+};
+
+if (
+    document.readyState === "complete" ||
+    (document.readyState !== "loading" && !document.documentElement.doScroll)
+) {
+  callback();
+} else {
+  document.addEventListener("DOMContentLoaded", callback);
 }
