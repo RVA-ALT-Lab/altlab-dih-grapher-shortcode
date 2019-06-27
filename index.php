@@ -21,8 +21,8 @@ function prefix_load_scripts() {
     $deps = array('jquery');
     $version= '1.0'; 
     $in_footer = true;    
-    wp_enqueue_script('prefix-main-js', plugin_dir_url( __FILE__) . 'js/dih-grapher-main.js', $deps, $version, $in_footer); 
-    wp_enqueue_style( 'prefix-main-css', plugin_dir_url( __FILE__) . 'css/dih-grapher-main.css');
+    wp_enqueue_script('dih-grapher-main-js', plugin_dir_url( __FILE__) . 'js/dih-grapher-main.js', $deps, $version, $in_footer); 
+    wp_enqueue_style( 'dih-grapher-main-css', plugin_dir_url( __FILE__) . 'css/dih-grapher-main.css');
 }
 
 
