@@ -26,7 +26,9 @@ function sliderAmount(slider){
 }
 
 document.onload = function (){
+	console.log('scroll ran')
 	if(document.getElementById("thanks")){
+		console.log('scroll found thanks')
 	  let thanks = document.getElementById("thanks");
 	  let topThanks = thanks.offsetTop;
 	  window.scrollTo({
