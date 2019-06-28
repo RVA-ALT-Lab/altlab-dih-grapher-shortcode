@@ -54,7 +54,7 @@ function graph_builder($score, $left, $right){
 function filterPostForTBL($content){
     global $post;	
 	if (get_post_meta( $post->ID, 'tbl_score', true )){
-	  return $content . get_post_meta( $post->ID, 'tbl_score', true );
+	  return $content . get_post_meta( $post->ID, 'tbl_score', true ) . get_post_meta($post->ID, 'discussion-prompt', true);
 	} else {
 		return $content;
 	}
