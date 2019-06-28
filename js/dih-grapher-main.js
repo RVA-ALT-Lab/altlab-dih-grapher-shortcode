@@ -16,10 +16,8 @@ if (document.getElementById('gform_wrapper_6'))//change for prod
 }
 
 
-// array1.forEach(function(element) {
-//   console.log(element);
-// });
 
+//SCROLL TO form confirmation gform submission
 function sliderAmount(slider){
 	 sliderValue = slider.value;
 	return sliderValue;
