@@ -16,12 +16,13 @@ if (document.getElementById('gform_wrapper_6'))//change for prod
 }
 
 
-
-//SCROLL TO form confirmation gform submission
 function sliderAmount(slider){
 	 sliderValue = slider.value;
 	return sliderValue;
 }
+
+//SCROLL TO form confirmation gform submission
+
 
 function scrollToThanks(){
 	console.log('scroll ran')
